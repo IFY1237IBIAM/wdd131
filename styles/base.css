@@ -1,0 +1,154 @@
+body {
+   font-family: 'Open Sans', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f0f0f0;
+   }
+   
+   header {
+   background-color: #333;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   }
+   .resources-box {
+      text-align: center;
+      position: absolute;
+      top: 230px;
+      right: 0;
+      width: 200px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+    
+   
+   nav {   
+      background-color: steelblue;
+      padding: 10px;
+   }
+  nav a {
+      color: white;
+      display: block;
+      padding: 20px;
+   }
+   nav {
+      background-color: steelblue;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+   }
+   nav a {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+   }
+   
+   main {
+      grid-column: 2/3;
+      margin: 1rem;
+      max-width: 940px;
+   }
+   
+   .card {
+      text-align: center;
+      margin: 1rem;
+      border: 1px solid rgba(0,0,0,.1);
+      padding: 1rem;
+      background-color: #ddd;
+      color: #000;
+   }
+   .cardic {
+      text-align: center;
+   }
+   
+   .cardic img{
+      float: left;
+      width: 150px;
+      height: fit-content;
+      border: 1px solid steelblue;
+      padding: 2px;
+      box-shadow: 0 0 30px gray;
+      margin: 0 0 1rem 1rem;
+      margin-bottom: 20px;
+   }
+   aside {
+      width: 20em;
+      text-align: center;
+      position: relative;
+   }
+   
+   .card:hover {
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   }
+   
+   .card img {
+      width: 150px;
+      height: auto;
+      border: 1px solid steelblue;
+      padding: 2px;
+      box-shadow: 0 0 30px gray;
+      margin: 0 0 1rem 1rem;
+      float: right;
+   }
+   
+   /* .card h2 {
+   margin-top: 0;
+   }
+   
+   .card p {
+   margin-bottom: 20px;
+   }
+    */
+   footer {
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+   }
+   
+   /* Google Fonts API */
+   @import url('(https://fonts.googleapis.com/css2?family=Roboto&display=swap)');
+   
+   /* CSS Flex Navigation Menu */
+   nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: #333;
+   }
+   
+   nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+   }
+   
+   nav li {
+   margin-right: 20px;
+   }
+   
+   nav a {
+   color: #fff;
+   text-decoration: none;
+   }
+   
+   nav a:hover {
+   color: #ccc;
+   }
+   
+   /* Hover Effect */
+   nav a:hover {
+   background-color: #444;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 10px;
+   }
+   
