@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria Info</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="script/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/land.webp" media="(min-width: 800px)">
+                <img src="images/land.webp" alt="Nigeria Landscape">
+            </picture>
+            <div class="content">
+                <div class="data-box">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>Area:</strong> 923,769 sq km</li>
+                        <li><strong>Population:</strong> 206,139,589</li>
+                        <li><strong>Capital:</strong> Abuja</li>
+                        <li><strong>Languages:</strong> English (official), Hausa, Yoruba, Igbo</li>
+                        <li><strong>Currency:</strong> Nigerian Naira</li>
+                        <li><strong>Time Zone:</strong> UTC+1</li>
+                        <li><strong>Calling Code:</strong> +234</li>
+                        <li><strong>Internet TLD:</strong> .ng</li>
+                    </ul>
+                </div>
+                <div class="weather-box">
+                    <h2>Weather<span class="weather-icon">⛅</span></h2>
+                    <ul>
+                        <li><strong>Temperature:</strong> 25 °C</li>
+                        <li><strong>Conditions:</strong> Partly Cloudy</li>
+                        <li><strong>Wind:</strong> 10 km/h</li>
+                        <li><strong>Wind Chill:</strong> <span id="wind-chill"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Aso Rock, Abuja &#128506; Nigeria</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+    <script src="place.js" defer></script>
+</body>
+</html>
