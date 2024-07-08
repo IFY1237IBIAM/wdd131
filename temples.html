@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 Dynamic Web Fundamentals - IfEGWU IBIAM IFEANYI</title>
+    <title>Temple Album</title>
     <meta name="description" content="ifeanyi ifegwu ibiam's BYU-IDAHO wdd131.">
     <meta name="author" content="ifeanyi ifegwu ibiam">
+    <!-- Link to the CSS files for mobile-first development -->
     <link rel="stylesheet" href="styles/temple.css">
     <link rel="stylesheet" href="styles/temple-large.css">
-    <script src="temple.js" defer></script>
+    <!-- Deferred script reference to the JavaScript file -->
+    <script src="scripts/temple.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
-        <div class="menu-icon">&#9776;</div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -22,53 +23,55 @@
                 <li><a href="#">Large</a></li>
                 <li><a href="#">Small</a></li>
             </ul>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
         </nav>
     </header>
     <main>
         <h2>Home</h2>
-        <section class="box">
-            <figure> <br>
-                <img src="images/temple1.jpg" alt="San Diego California" width="200"> 
-                <figcaption>Temple 1</figcaption>
-            </figure> <br>
-            <figure> 
-                <img src="images/temple 2.jpeg" alt="San Diego California" width="200"> 
-                <figcaption>Aba Nigerian Temple</figcaption>
-            </figure>
+        <div class="gallery">
             <figure>
-                <img src="images/temple3.jpg" alt="San Diego California" width="200">
+                <img src="images/temple1.jpg" alt="San Diego California">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <!-- Repeat the figure element 8 more times -->
+            <figure>
+                <img src="images/temple 2.jpeg" alt="San Diego California">
                 <figcaption>San Diego California</figcaption>
             </figure>
             <figure>
-                <img src="images/temple4.jpeg" alt="San Diego California" width="200">
-                <figcaption>Temple 4</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple 5.jpg" alt="San Diego California" width="200">
-                <figcaption>Temple 5</figcaption>
-            </figure>
-            <figure>
-                <img src="images/temple6.jpg" alt="San Diego California" width="200">
+                <img src="images/temple3.jpg" alt="San Diego California">
                 <figcaption>San Diego California</figcaption>
             </figure>
             <figure>
-                <img src="images/temple7.jpg" alt="San Diego California" width="200">
-                <figcaption>Temple 7</figcaption>
+                <img src="images/temple4.jpeg" alt="San Diego California">
+                <figcaption>San Diego California</figcaption>
             </figure>
             <figure>
-                <img src="images/temple8.jpg" alt="San Diego California" width="200">
-                <figcaption>Temple 8</figcaption>
+                <img src="images/temple 5.jpg" alt="San Diego California">
+                <figcaption>San Diego California</figcaption>
             </figure>
             <figure>
-                <img src="images/temple9.jpg" alt="San Diego California" width="200">
-                <figcaption>Temple 9</figcaption>
+                <img src="images/temple6.jpg" alt="San Diego California">
+                <figcaption>San Diego California</figcaption>
             </figure>
-        </section>
+            <figure>
+                <img src="images/temple7.jpg" alt="San Diego California">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.jpg" alt="San Diego California">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.jpg" alt="San Diego California">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Temple Album. All rights reserved.</p>
-        <p>Abia &bull; Nigeria</p>
-        <p>Last Modified: 27/06/2024 7:27:45</p>
+        <p>&copy; <span id="current-year"></span> Temple Album. All rights reserved.</p>
+        <p>Abia State Nigeria &bull; Madagascar</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>
