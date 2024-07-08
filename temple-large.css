@@ -35,6 +35,13 @@
     header ul li a {
         color: white;
         text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    header ul li a:hover {
+        background-color: #5b2c6f; /* Adjust to your color scheme */
+        border-radius: 5px;
     }
 
     header .menu-icon {
@@ -43,7 +50,7 @@
 
     main {
         padding: 2rem;
-        max-width: 100px;
+        max-width: 1200px;
         margin: 0 auto; /* Center horizontally */
     }
 
@@ -59,11 +66,12 @@
     }
 
     figure img {
-        width: 300px;
+        width: 100%;
         height: auto;
     }
 
     footer {
         padding: 1rem 2rem;
+        text-align: center;
     }
 }

@@ -74,7 +74,6 @@ figure {
 
 figure img {
     width: 100%;
-    max-width: 200px; /* Adjust to ensure images aren't too large */
     height: auto;
 }
 
@@ -100,15 +99,11 @@ footer {
     }
 
     main {
-        max-width: 200px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
     .gallery {
         grid-template-columns: repeat(3, 1fr); /* Three columns for larger view */
-    }
-
-    figure img {
-        max-width: 400px
     }
 }
