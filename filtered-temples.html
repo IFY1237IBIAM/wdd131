@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="ifeanyi ifegwu ibiam's BYU-IDAHO wdd131.">
+    <meta name="author" content="ifeanyi ifegwu ibiam">
+    <!-- Link to the CSS files for mobile-first development -->
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+    <!-- Deferred script reference to the JavaScript file -->
+    <script src="scripts/filtered-temple.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+        </nav>
+    </header>
+    <main>
+        <h2>Temple list</h2>
+        <div id="temple-container"></div>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Temple Album. All rights reserved.</p>
+        <p>Abia State Nigeria &bull; Nigeria</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
