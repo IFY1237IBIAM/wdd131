@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ifeanyi ifegwu ibiam's BYU-IDAHO wdd131">
     <meta name="author" content="ifeanyi ifegwu ibiam">
-    <title>Travel Diaries - Home</title>
+    <title>Travel Diaries - Submit Your Story</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplan-large.css">
-
     <script src="scripts/siteplan.js" defer></script>
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/temple.js" defer></script>
@@ -29,27 +28,19 @@
         </nav>
     </header>
     <main>
-        <h2>Welcome to Travel Diaries</h2>
-        <p>Explore the world through our travel stories, guides, and tips.</p>
-        <p>Discover new destinations and share your travel experiences with us.</p>
+        <h2>Submit Your Travel Story</h2>
+        <form id="storyForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="story">Your Story:</label><br>
+            <textarea id="story" name="story" rows="10" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <footer>
-        <p>&copy; <span id="current-year"></span> Temple Album. All rights reserved.</p>
-        <p>Abia State Nigeria &bull; Nigeria</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
-        <h2>Additional Information</h2>
-        <ul>
-            <li><a href="https://facebook.com">facebook</a></li>
-            <li><a href="https://www.linkedin.com/in/ifeanyi-chukwu-ibiam-0b44a927a">linkedin</a></li>
-        </ul>
-        <a href="https://app.moqups.com/unsaved/abd61cc0/edit/page/ad12de680">contact us wireframe</a>
-        <p>&copy; 2023 ✔Ibiams rafting comany✔ |Ifeanyi Ifegwu Ibiam|</p>
-        <a href="https://facebook.com">
-            <img src="images/facebook.png" alt="facebook"></a>
-        <a href="https://twitter.com">
-            <img src="images/twitter.png" alt="twitter"></a>
-        <a href="https://instagram.com">
-            <img src="images/instagram.png" alt="instagram"></a>    
+        <p>&copy; 2024 Travel Diaries</p>
     </footer>
 </body>
 </html>
