@@ -1,109 +1,99 @@
-/* Basic styles */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAF0E6;
+    color: #000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header styles */
 header {
-    background-color: #5b2c6f; /* Adjust to your color scheme */
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #2E8B57;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
 }
 
-header nav {
-    position: relative;
-}
-
-header nav ul {
-    list-style: none;
+nav ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: none; /* Hide menu by default */
-    flex-direction: column;
-    background-color: #5b2c6f;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    width: 100%;
 }
 
-header nav ul.visible {
-    display: flex; /* Show menu when .visible class is added */
+nav li {
+    display: inline;
+    margin: 0 10px;
 }
 
-header nav ul li {
-    padding: 1rem;
-}
-
-header nav ul li a {
-    color: white;
+nav a {
+    color: #FFF;
     text-decoration: none;
 }
 
-header .menu-icon {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-/* Main styles */
 main {
-    padding: 1rem;
+    padding: 20px;
 }
 
+footer {
+    background-color: #2E8B57;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* Larger Screen View */
+@media (min-width: 601px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main > * {
+        flex: 1;
+        margin: 10px;
+    }
+
+    footer {
+        position: fixed;
+    }
+}
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 20px;
+    padding: 20px;
 }
 
-figure {
+.gallery figure {
     margin: 0;
-    text-align: center;
 }
 
-figure img {
+.gallery img {
     width: 100%;
     height: auto;
 }
 
-/* Footer styles */
-footer {
-    background-color: #5b2c6f;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-/* Media queries */
-@media (min-width: 768px) {
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        background-color: transparent;
-    }
-
-    header .menu-icon {
-        display: none;
-    }
-
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
+@media (min-width: 601px) {
     .gallery {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for larger view */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
